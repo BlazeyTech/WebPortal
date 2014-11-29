@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Current Bugs:
+-Settings feature under construction.
+-CSS partially included.
+-Intellisense not working.
+
+1.0 Alpha updates:
+-9/29/14
+  -Fixed ALT + I shortcut so it correctly toggles the Insert Font form and CTRL + I correctly indents the text.
+  -The Comment Out toolbar item has been changed to Comment/Uncomment Text. It can now be used to comment out or uncomment any selected text, or if no text is selected it will insert a new comment.
+-7/27/14
+  -Started framework for Insert Tag settings. Users will be able to choose between 3 different settings controlling how tags are spaced out when inserted into the textbox.
+-7/26/14
+  -Fixed a minor bug where shortcuts involving the CTRL key would make an annoying Windows alert sound.
+-7/25/14
+  -Fixed a bug where Intellisense would not properly close after the opening bracket ('&lt;') was deleted. Also closes if the user enters a closing bracket ('&gt;').
+-7/23/14
+  -MAJOR BUG FIX: Shortcuts involving the Alt key no loner select the Menustrip.
+-7/8/14
+  -Fixed Settings menu bug identified on 6/17/14.
+  -Added tooltips for several HTML menu items that were missing tooltips.
+  -Fixed bug where Unsaved Data form would pop-up even if the textbox was empty.
+-6/17/14
+  -Identified bugs in the Settings menu under Font. Submenus are not checked after they are selected.
+  -Fixed error when user tries to load Web Browser preview without a file save. Web Browser preview is still broken though.
+-6/5/14
+  -Finished all symbols in Symbol Form and inserting a symbol can now be done through the Form or the Menustrip.
+-6/4/14
+  -Added Symbol Form and shortcut to Shortcut Buttons toolbar to help simplify inserting special characters.
+-5/14/14
+  -Added a feature to quickly turn off intellisense under the Settings menu.
+-3/27/14
+  -Added Insert List form. Merged the Ordered List and Unordered List shortcuts to one shortcut/form.
+-3/17/14
+  -Added Bold to the Shortcut buttons bar.
+  -Added Italic to the Shortcut buttons bar.
+  -Added Underline to the Shortcut buttons bar. 
+-3/16/14
+  -Added Insert Image form.
+  -Added Code to the Shortcut buttons bar.
+  -Fixed a minor bug where selected data from inserting a table is rolled over to other insert actions such as lists.
+-11/29/13
+  -Intellisense is now partially working. User is unable to select tags with a mouse, but can use up/down keys.
+-11/22/13
+  -Fixed a minor bug where the unsaved data dialog would show when a file was opened and no data was changed.
+-11/3/13
+  -Added Video Form. This form allows for easier path configuration for the video source(s). Similar to the new Audio Form.
+  -Added Audio Form. Users can now open the path of an audio file and have it coded into HTML5 Audio controls.
+-11/2/13
+  -Added Insert Table Form. Users can now define how many rows and columns will be in the table instead of a preset amount.
+-10/24/13
+  -MAJOR BUG FIX: Adding Font now works.
+  -MAJOR BUG FIX: Searching items now works.
+-10/13/13
+  -Addex Alt + C &lt;!-- --&gt; comment out shortcut.
+-9/7/13
+  -Fixed Bug where window crashed during Save As feature.
+  -Changed Alt + S shortcut from &lt;sub&gt;&lt;/sub&gt; to &lt;span&gt;&lt;/span&gt;.
+-8/11/13
+  -Added Background Color to Settings.
+  -Added Font to Settings, still under work.
+  -Added Font Color to Settings.
+  -Added Font Size to Settings, still under work.
+  -Added 5 additional shortcut buttons.
+-8/6/13
+  -Added Toolbars to the menu.
+  -Improvements towards Intellisense, but not currently working.
+-7/9/13
+MAJOR BUG FIX: Save feature now works correctly.
+  -Save as will always save file as .html, regardless if you type it in or not.
+-7/8/13
+  -Added Settings form but currently under construction.
+  -Added support for Math symbols, Greek symbols, and Other symbols to HTML.
+  -Added iFrame &lt;iframe&gt;&lt;/iframe&gt; to Format.
+-7/7/13
+  -Added support for ASCII symbols under the Symbols Menu.
+  -Added field set &lt;fieldset&gt;&lt;/fieldset&gt; to Format.
+  -Added datalist &lt;datalist&gt;&lt;/datalist&gt; to Objects.
+  -Added mirror text &lt;bdo&gt;&lt;/bdo&gt; to Text Modifiers.
+  -Added citation &lt;cite&gt;&lt;/cite&gt; to Text Modifiers.
+  -Added block quote &lt;blockquote&gt;&lt;/blockquote&gt; to Text Modifiers.
+  -Added columns &lt;colgroup&gt;&lt;/colgroup&gt; to Format.
+  -Added span &lt;span&gt;&lt;/span&gt; to Format.
+  -Added marquee &lt;marquee&gt;&lt;/marquee&gt; to Text Modifiers.
+  -Removed ALT + L shortcut and added CTRL + H shortcut for thematic break &lt;hr /&gt;.
+  -Added the &lt;small&gt;&lt;/small&gt; and &lt;big&gt;&lt;/big&gt; tags under the Size menu, found under the Text Modifiers menu.
+  -Fixed the &lt;table&gt;&lt;/table&gt; tags by automatically adding the &lt;tr&gt; and &lt;td&gt; tags inside of the table.
+  -Added "Let's make some Fancy Font" to the tutorials page.
+  -Added "Index" to the tuturials page and "Creating a Basic Page" to the Basics Folder in the tutorials page.
+-7/5/13
+  -Added support for all column properties. (CSS)
+  -Added support for all dimension properties. (CSS)
+  -Added Tutorials tab under help.
+-7/1/13
+  -Added support for the background properties. (CSS)
+  -Added support for the border properties. (CSS)
+  -Added support for the box properties. (CSS)
+  -Added ALT + U &lt;ul&gt;&lt;/ul&gt; shortcut.
+  -Added ALT + L &lt;hr /&gt; shortcut.
+  -Added CTRL + J &lt;script&gt;&lt;/script&gt;
+-6/30/13
+  -Added support for the remaining animation properties and fixed the tooltip text. (CSS)
+  -Added support for all Border properties. (CSS)
+-6/27/13
+  -Changed around CSS Menu items for  increased organization.
+  -Added About page.
+  -Added support for the following CSS properties:
+    -animation
+    -animation-name
+    -animation-timing-function
+-6/26/13
+  -Added &lt;title&gt;&lt;/title&gt; tags.
+  -Fixed certain tags to start on new lines instead of back-to-back.
+  -Fixed bugs/updates quick launch shortcut and menu launch.
+  -Added CSS Properties (not yet coded)
+    -Added Alignmment
+    -Added Animation
+    -Added Appearance
+    -Added Background
+    -Added Baseline
+    -Added Border
+    -Added Bottom
+    -Added Box
+    -Added Clear
+    -Added Color
+    -Added Column
+    -Added Counter
+    -Added Crop
+    -Added Cursor
+    -Added Display
+    -Added Drop-initial
+    -Added Float
+    -Added Font
+    -Added Grid
+-6/23/13
+  -Added new tags with descriptions.
+  -Fixed Save as function.
+  -Added remaining quick links. All currently working (except font).
+  -Added shortcuts form, and additional shortcuts to the list.
+    -Removed CTRL+S &lt;sup&gt;&lt;/sup&gt; shortcut.
+    -Added CTRL+S Save as shortcut.
+    -Added CTRL+T &lt;table&gt;&lt;/table&gt; shortcut.
+    -Added CTRL+O &lt;object&gt;&lt;/object&gt; shortcut.
+    -Added ALT+S &lt;sub&gt;&lt;sub&gt; shortcut.
+    -Added CTRL+Q &lt;q&gt;&lt;/q&gt; shortcut.
+    -Added CTRL+M &lt;video&gt;&lt;/video&gt; shortcut.
+    -Added CTRL+U &lt;u&gt;&lt;/u&gt; shortcut.
+    -Added ALT+B &lt;button&gt;&lt;/button&gt; shortcut.
+    -Added CTRL + B &lt;br /&gt; shortcut.
+</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAMAICAAAAEAIACoEAAANgAAABgYAAABACAAiAkAAN4QAAAQEAAAAQAgAGgEAABmGgAAKAAAACAA
+        AABAAAAAAQAgAAAAAACAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMjIyzzIyMs8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIy
+        Ms8yMjLPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMjL/MjIy/wAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAyMjJAMjIyrwAAAAAAAAAAMjIynzIyMkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAMjIy/zIyMv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIyMt8yMjL/MjIyMAAA
+        AAAAAAAAAAAAAAAAAAAyMjIQMjIyrzIyMv8yMjL/AAAAAAAAAAAyMjL/MjIy/zIyMq8yMjIQAAAAAAAA
+        AAAAAAAAAAAAADIyMjAyMjL/MjIy3wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMjIynzIy
+        Mv8yMjKvAAAAAAAAAAAAAAAAMjIyEDIyMs8yMjL/MjIy/zIyMv8AAAAAAAAAADIyMv8yMjL/MjIy/zIy
+        Ms8yMjIQAAAAAAAAAAAAAAAAMjIyrzIyMv8yMjKfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAyMjIgMjIy/zIyMv8yMjJwAAAAAAAAAAAyMjK/MjIy/zIyMv8yMjL/MjIy/wAAAAAAAAAAMjIy/zIy
+        Mv8yMjL/MjIy/zIyMr8AAAAAAAAAADIyMnAyMjL/MjIy/zIyMiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAyMjKAMjIy/zIyMv8yMjK/MjIynzIyMv8yMjL/MjIy/zIyMv8yMjL/AAAAAAAA
+        AAAyMjL/MjIy/zIyMv8yMjL/MjIy/zIyMp8yMjK/MjIy/zIyMv8yMjKAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMjJgMjIy7zIyMv8yMjL/MjIy/zIyMv8yMjL/MjIy/zIy
+        Mv8AAAAAAAAAADIyMv8yMjL/MjIy/zIyMv8yMjL/MjIy/zIyMv8yMjLvMjIyYAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMjIQMjIyrzIyMv8yMjL/MjIy/zIy
+        Mv8yMjL/MjIy/wAAAAAAAAAAMjIy/zIyMv8yMjL/MjIy/zIyMv8yMjL/MjIyrzIyMiAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMjKvMjIy/zIy
+        Mv8yMjL/MjIy/zIyMv8yMjL/AAAAADIyMhAyMjL/MjIy/zIyMv8yMjL/MjIy/zIyMv8yMjKvAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMjLPMjIy/zIyMv8yMjL/MjIy/zIy
+        Mv8yMjL/MjIy/zIyMv8yMjL/MjIy/zIyMv8yMjJAMjIyQDIyMv8yMjL/MjIy/zIyMv8yMjL/MjIy/zIy
+        Mv8yMjL/MjIy/zIyMv8yMjL/MjIyzwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIyMs8yMjL/MjIy/zIy
+        Mv8yMjL/MjIy/zIyMv8yMjL/MjIy/zIyMv8yMjL/MjIy/zIyMnAyMjJwMjIy/zIyMv8yMjL/MjIy/zIy
+        Mv8yMjL/MjIy/zIyMv8yMjL/MjIy/zIyMv8yMjLPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAyMjL/MjIy/zIyMv8yMjL/MjIy/zIyMv8yMjL/MjIy/zIyMv8yMjL/MjIy/zIy
+        Mv8yMjL/MjIy/zIyMv8yMjL/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAADIyMv8yMjL/MjIy/zIyMv8yMjL/MjIy/zIyMv8yMjL/MjIy/zIy
+        Mv8yMjL/MjIy/zIyMv8yMjL/MjIy/zIyMv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMjKfMjIy/zIyMv8yMjL/MjIyrzIyMmAyMjIwAAAAAAAA
+        AAAAAAAAAAAAADIyMjAyMjJgMjIynzIyMv8yMjL/MjIy/zIyMp8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMjIyjzIyMv8yMjLvMjIyjzIyMiAyMjIgMjIyjzIy
+        Mr8yMjLvMjIy/zIyMv8yMjLvMjIyvzIyMo8yMjIgMjIyEDIyMmAyMjLvMjIy/zIyMo8AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIyMiAyMjL/MjIy/zIyMlAAAAAAMjIyQDIy
+        Mv8yMjL/MjIy/zIyMv8yMjL/MjIy/zIyMv8yMjL/MjIy/zIyMv8yMjJAAAAAADIyMlAyMjL/MjIy/zIy
+        MiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMjIyjzIyMv8yMjK/AAAAAAAA
+        AAAyMjK/MjIy/zIyMv8yMjL/MjIy/zIyMv8yMjL/MjIy/zIyMv8yMjL/MjIy/zIyMr8AAAAAAAAAADIy
+        Mr8yMjL/MjIyjwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMjK/MjIy/zIy
+        MlAAAAAAAAAAADIyMv8yMjL/MjIy/zIyMv8yMjL/MjIy/zIyMv8yMjL/MjIy/zIyMv8yMjL/MjIy/wAA
+        AAAAAAAAMjIyUDIyMv8yMjK/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIy
+        Mv8yMjL/MjIyIAAAAAAAAAAAMjIy7zIyMv8yMjL/MjIy/zIyMv8yMjL/MjIy/zIyMv8yMjL/MjIy/zIy
+        Mv8yMjLvAAAAAAAAAAAyMjIgMjIy/zIyMv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAMjIy/zIyMv8AAAAAAAAAAAAAAAAyMjKfMjIy/zIyMv8yMjL/MjIy/zIyMv8yMjL/MjIy/zIy
+        Mv8yMjL/MjIy/zIyMp8AAAAAAAAAAAAAAAAyMjL/MjIy/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAyMjLPMjIyzwAAAAAAAAAAAAAAADIyMhAyMjK/MjIy/zIyMv8yMjL/MjIy/zIy
+        Mv8yMjL/MjIy/zIyMv8yMjK/MjIyEAAAAAAAAAAAAAAAADIyMs8yMjLPAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMjJAMjIy7zIy
+        Mv8yMjL/MjIy/zIyMv8yMjLvMjIyQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAyMjKPMjIy/zIyMv8yMjL/MjIy/zIyMo8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAyMjKPMjIy7zIyMu8yMjKPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////////////
+        //////////////P//8/z+Z/P8eGHj/HBg4/wwYMP+AGAH/wBgD/+AYB//wEA/+AAAAfgAAAH/wAA//8A
+        AP/+A8B//AAAP/hAAh/4wAMf+MADH/jAAx/5wAOf+cADn//wD///+B////w//////////////////ygA
+        AAAYAAAAMAAAAAEAIAAAAAAAYAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMjIzMjIyGQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMjIyGTIyMjMAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAyMjLnMTExcwAAAAAAAAAAAAAAAAAAAAAyMjIIMTExOzIyMhUxMTETMTExNzEx
+        MQcAAAAAAAAAAAAAAAAAAAAAMTExczExMecAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMjLtMTExkTEx
+        MQgAAAAAAAAAADExMQkyMjKWMTEx3TIyMjoxMTE5MTEx2zExMZYyMjIJAAAAAAAAAAAyMjIJMTExkTEx
+        MewAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMjKfMjIy4TIyMkUAAAAAMjIyHTIyMrMyMjL/MjIy/zIy
+        Mj8yMjI/MjIy/zIyMv8yMjKzMjIyHQAAAAAyMjJFMjIy4TIyMp8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAyMjI7MTEx3zExMckyMjJbMTExlzExMfYyMjL/MTEx/jIyMj8xMTE/MTEx/jExMf4yMjL3MTExlzEx
+        MVsyMjLJMTEx3zExMTsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMjIIMTExUzExMdgyMjLtMTEx8zEx
+        Mf4yMjL/MTEx/jIyMj8xMTE/MTEx/jExMf4yMjL/MTEx8jExMe0yMjLYMTExUzExMQcAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAADIyMgkyMjLDMjIy/zIyMv8yMjL/MjIy/zIyMj8yMjJCMjIy/zIy
+        Mv8yMjL/MjIy/zIyMsMyMjISAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADExMU0yMjJ/MTExfzEx
+        MX8yMjLhMTEx/jExMf4yMjL/MTEx/jIyMlcxMTFdMTEx/jExMf4yMjL/MTEx/jExMeEyMjJ/MTExfzEx
+        MX8yMjJNAAAAAAAAAAAAAAAAAAAAADIyMpsyMjL/MjIy/jIyMv4yMjL/MjIy/zIyMv8yMjL/MjIy/zIy
+        MooyMjKLMjIy/zIyMv8yMjL/MjIy/zIyMv8yMjL/MjIy/jIyMv4yMjKbAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAyMjL/MTEx/jExMf4yMjL/MTEx/jIyMv8xMTH+MTEx/jExMf4yMjL/MTEx/jEx
+        Mf4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADExMTsyMjL/MTEx/jEx
+        MeAyMjKpMTExizIyMn8xMTF/MTExizExMakyMjLbMTEx/jExMf4yMjI7AAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAMTExNTExMcgyMjLhMTExgTExMUgyMjKJMTExpzIyMrwxMTG8MTExpzEx
+        MYkyMjJCMTExaTExMdgyMjLIMTExNQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMjIOMjIynTIy
+        MvMyMjItMjIyLzIyMtcyMjL/MjIy/zIyMv8yMjL/MjIy/zIyMv8yMjLXMjIyLzIyMi0yMjLzMjIynTIy
+        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
+</value>
+  </data>
+</root>
